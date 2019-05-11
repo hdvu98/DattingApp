@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/living0">
+    </item>
+    <item android:title="Sống một mình"
+        android:orderInCategory="1"
+
+        android:id="@+id/living1"
+        ></item>
+    <item android:title="Sống với ba mẹ "
+        android:orderInCategory="2"
+
+        android:id="@+id/living2"
+        ></item>
+    <item android:title="Sống ở kí túc xá"
+        android:orderInCategory="3"
+
+        android:id="@+id/living3"
+        ></item>
+    <item android:title="Sống với bạn bè"
+        android:orderInCategory="4"
+
+        android:id="@+id/living4"
+        ></item>
+
+</menu>

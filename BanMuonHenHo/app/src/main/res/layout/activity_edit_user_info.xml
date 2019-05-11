@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editUserInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtAboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tự giới thiệu"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="16dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/getAboutMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:ems="40"
+                    android:hint="Điều gì làm bạn nổi bật? Bạn càng chia sẻ, bạn càng trở nên thú vị và thực tế"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:inputType=""
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtRelationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tình trạng mối quan hệ"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="hideKeyBoard"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    >
+
+                    <Button
+                        android:id="@+id/getRelationship"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getRelationship2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSexuality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thiên hướng tình dục"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="hideKeyBoard"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getSexuality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getSexuality2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cân nặng"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getWeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getWeight2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chiều cao"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getHeight2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtBodyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ngoại hình"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getBodyImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getBodyImage2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtEyeColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Màu mắt"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getEyeColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getEyeColor2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtHairColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Màu tóc"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getHairColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getHairColor2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLiving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đang sống cùng"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getLiving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getLiving2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtKid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Con"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getKid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getKid2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:onClick="hideKeyBoard"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDrinking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Uống rượu"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getDrinking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getDrinking2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:onClick="hideKeyBoard"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtSmoking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hút thuốc"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:layout_marginTop="8dp"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="100">
+
+                    <Button
+                        android:id="@+id/getSmoking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="98"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Chưa trả lời"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/getSmoking2"
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/down" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/match_title"/>
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/male"
+                    app:civ_border_color="#f05457"
+                    app:civ_border_width="3dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtNameAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tên, 29"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="#f05457"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lập trình viên"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TP. Hồ Chí Minh"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/female"
+                    app:civ_border_color="#f05457"
+                    app:civ_border_width="3dp" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txtNameAge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tên, 24"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="#f05457"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtJob2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sinh viên"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+                <TextView
+                    android:id="@+id/txtFrom2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TP. Hồ Chí Minh"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <Button
+            android:layout_marginTop="40dp"
+            android:id="@+id/btnAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button3"
+            android:text="Đồng ý"
+            android:textColor="#ffff" />
+        <Button
+            android:id="@+id/btnDeny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button2"
+            android:text="Từ chối"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_pink"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

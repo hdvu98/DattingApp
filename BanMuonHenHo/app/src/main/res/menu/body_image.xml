@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+        android:id="@+id/bodyImage0">
+    </item>
+    <item android:title="Bình thường"
+        android:orderInCategory="1"
+        android:id="@+id/bodyImage1">
+    </item>
+    <item android:title="Cơ bắp"
+        android:orderInCategory="2"
+        android:id="@+id/bodyImage2"
+        ></item>
+    <item android:title="Gầy"
+        android:orderInCategory="3"
+        android:id="@+id/bodyImage3"
+        ></item>
+    <item android:title="Mập"
+        android:orderInCategory="4"
+        android:id="@+id/bodyImage4"
+        ></item>
+    <item android:title="Thon gọn"
+        android:orderInCategory="5"
+        android:id="@+id/bodyImage5"
+        ></item>
+
+</menu>

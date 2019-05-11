@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/drinking0">
+    </item>
+    <item android:title="Tôi không uống rượu"
+        android:id="@+id/drinking1"
+        android:orderInCategory="1"
+        >
+    </item>
+    <item android:title="Tôi uống rượu ít"
+        android:orderInCategory="2"
+
+        android:id="@+id/drinking2"
+        ></item>
+    <item android:title="Tôi uống rượu thường xuyên"
+        android:id="@+id/drinking3"
+        android:orderInCategory="3"
+
+        ></item>
+
+</menu>

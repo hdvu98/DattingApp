@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_marginTop="8dp"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:background="@drawable/back_pink"
+        android:alpha="1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaa_font_style"
+        android:textStyle="bold"
+        android:textColor="#f05457"
+        android:text="Quản lý thông tin tài khoản"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingTop="12dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtAcountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:text="Tên"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColor="#f05457"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/getAcountName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPersonName"
+                    android:text="Chipu"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColorLink="@color/cardview_shadow_start_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/txtGioiTinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="40"
+                    android:gravity="center_vertical"
+                    android:text="Giới tính"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textStyle="bold"
+                    android:textColor="#f05457"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:text="Nam" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:layout_weight="1"
+                        android:text="Nữ" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:text="Ngày sinh"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textStyle="bold"
+                    android:textColor="#f05457"/>
+
+                <Button
+                    android:id="@+id/getBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:inputType="date"
+                    android:text="30/4/1998"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="true"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:text="Email"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textStyle="bold"
+                    android:textColor="#f05457"/>
+
+                <EditText
+                    android:id="@+id/getEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textEmailAddress"
+                    android:text="chipu@gmail.com"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColorLink="@color/cardview_shadow_start_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:text="Số điện thoại"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textStyle="bold"
+                    android:textColor="#f05457"/>
+
+                <EditText
+                    android:id="@+id/getPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="phone"
+                    android:text="0974458252"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColorLink="@color/cardview_shadow_start_color" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/txtFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+
+                    android:text="Facebook"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textStyle="bold"
+                    android:textColor="#f05457"/>
+
+                <EditText
+                    android:id="@+id/getFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:gravity="right"
+                    android:inputType="textPersonName"
+                    android:text="Chi Pu"
+                    android:fontFamily="@font/comfortaa_font_style"
+                    android:textColorLink="@color/cardview_shadow_start_color" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#9d9d9f" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

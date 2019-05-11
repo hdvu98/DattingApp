@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/login"
+    android:hardwareAccelerated="false"
+    android:largeHeap="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:onClick="hideKeyBoard"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:alpha="1"
+                    android:background="@drawable/back_white"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:onClick="hideKeyBoard"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="120dp"
+                    android:src="@drawable/logo_white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/button_white"
+                    android:text="Đăng ký"
+                    android:textColor="#f05457"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+                    <TextView
+                        android:id="@+id/txtRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/comfortaa_font_style"
+                        android:gravity="center"
+                        android:text="Đăng ký tài khoản"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/userLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtLogin">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/userico" />
+
+                        <EditText
+                            android:id="@+id/edtUser"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Tài khoản"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/passLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userLayout">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/passico" />
+
+                        <EditText
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Mật khẩu"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/passLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userLayout">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/passico" />
+
+                        <EditText
+                            android:id="@+id/edtPassword2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Nhập lại mật khẩu"
+                            android:inputType="textPassword"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userLayout">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/nameico" />
+
+                        <EditText
+                            android:id="@+id/edtFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Họ và tên"
+                            android:inputType="text"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/edtFirstName">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/nameico" />
+
+                        <EditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtLogin">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/dobico" />
+
+                        <Button
+                            android:id="@+id/edtDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:background="@android:color/transparent"
+                            android:backgroundTint="#FFFFFF"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:hint="Chọn ngày sinh"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:textAlignment="viewStart"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@android:color/white"
+                            android:textSize="16sp"
+                            android:textStyle="italic"
+                            tools:textColor="@android:color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtLogin">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/sexico" />
+
+                        <TextView
+                            android:id="@+id/txtSex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:gravity="center_vertical"
+                            android:text="Giới tính:"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@android:color/white"
+                                android:checked="true"
+                                android:fontFamily="@font/comfortaa_light"
+                                android:text="Nam"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="100dp"
+                                android:layout_height="36dp"
+                                android:layout_marginLeft="30dp"
+                                android:buttonTint="@android:color/white"
+                                android:checked="false"
+                                android:fontFamily="@font/comfortaa_light"
+                                android:text="Nữ"
+                                android:textColor="@android:color/white"
+                                android:textSize="15sp"
+                                android:textStyle="italic" />
+
+                        </RadioGroup>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

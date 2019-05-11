@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/hairColor0">
+    </item>
+    <item android:title="Đen"
+        android:orderInCategory="1"
+
+        android:id="@+id/hairColor1">
+    </item>
+    <item android:title="Xanh dương"
+        android:orderInCategory="2"
+
+        android:id="@+id/hairColor2"
+        ></item>
+    <item android:title="Xanh lá"
+        android:orderInCategory="3"
+
+        android:id="@+id/hairColor3"
+        ></item>
+    <item android:title="Nâu"
+        android:orderInCategory="4"
+
+        android:id="@+id/hairColor4"
+        ></item>
+    <item android:title="Nâu đỏ"
+        android:orderInCategory="5"
+
+        android:id="@+id/hairColor5"
+        ></item>
+    <item android:title="xám"
+        android:orderInCategory="6"
+
+        android:id="@+id/hairColor6"
+        ></item>
+    <item android:title="Trắng"
+        android:orderInCategory="7"
+
+        android:id="@+id/hairColor7"
+        ></item>
+    <item android:title="Tím"
+        android:orderInCategory="8"
+
+        android:id="@+id/hairColor8"
+        ></item>
+    <item android:title="Vàng"
+        android:orderInCategory="9"
+
+        android:id="@+id/hairColor9"
+        ></item>
+
+
+
+</menu>

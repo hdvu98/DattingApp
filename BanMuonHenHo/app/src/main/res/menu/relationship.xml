@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/relationship0">
+    </item>
+    <item android:title="Có mối quan hệ phức tạp"
+        android:orderInCategory="1"
+
+        android:id="@+id/relationship1">
+    </item>
+    <item android:title="Đang độc thân"
+        android:orderInCategory="2"
+
+        android:id="@+id/relationship2"
+        ></item>
+    <item android:title="Đã ly hôn"
+        android:orderInCategory="3"
+
+        android:id="@+id/relationship3"
+        ></item>
+
+</menu>

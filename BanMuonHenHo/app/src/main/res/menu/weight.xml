@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/weight0">
+    </item>
+    <item android:title="Nhỏ hơn 40kg"
+        android:orderInCategory="1"
+
+        android:id="@+id/weight1">
+    </item>
+    <item android:title="40-45kg"
+        android:orderInCategory="2"
+
+        android:id="@+id/weight2">
+    </item>
+    <item android:title="45-50kg"
+        android:orderInCategory="3"
+
+        android:id="@+id/weight3">
+    </item>
+
+    <item android:title="50-55kg"
+        android:orderInCategory="4"
+
+        android:id="@+id/weight4">
+    </item>
+
+    <item android:title="55-60kg"
+        android:orderInCategory="5"
+
+        android:id="@+id/weight5">
+    </item>
+
+    <item android:title="60-65kg"
+        android:orderInCategory="6"
+
+        android:id="@+id/weight6">
+    </item>
+
+
+    <item android:title="65-70kg"
+        android:orderInCategory="7"
+
+        android:id="@+id/weight7">
+    </item>
+
+    <item android:title="70-75kg"
+        android:orderInCategory="8"
+
+        android:id="@+id/weight8">
+    </item>
+
+    <item android:title="75-80kg"
+        android:orderInCategory="9"
+
+        android:id="@+id/weight9">
+
+    </item>
+
+    <item android:title="80-85kg"
+        android:orderInCategory="10"
+
+        android:id="@+id/weight10">
+    </item>
+
+    <item android:title="85-90kg"
+        android:orderInCategory="11"
+
+        android:id="@+id/weight11">
+    </item>
+
+    <item android:title="90-95kg"
+        android:orderInCategory="12"
+
+        android:id="@+id/weight12">
+
+    </item>
+
+
+    <item android:title="95-100kg"
+        android:orderInCategory="13"
+
+        android:id="@+id/weight13">
+    </item>
+
+    <item android:title="100-105kg"
+        android:orderInCategory="14"
+
+        android:id="@+id/weight14">
+
+    </item>
+
+    <item android:title="105-110kg"
+        android:orderInCategory="15"
+
+        android:id="@+id/weight15">
+    </item>
+
+    <item android:title="115-120kg"
+        android:orderInCategory="16"
+
+        android:id="@+id/weight16">
+    </item>
+
+    <item android:title="120-125kg"
+        android:orderInCategory="17"
+
+        android:id="@+id/weight17">
+    </item>
+    <item android:title="125-130kg"
+        android:orderInCategory="18"
+
+        android:id="@+id/weight18">
+    </item>
+    <item android:title="Lớn hơn 130kg"
+        android:orderInCategory="19"
+
+        android:id="@+id/weight19">
+    </item>
+
+</menu>

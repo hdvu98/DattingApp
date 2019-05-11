@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">helloApp</string>
+    <string name="mc_question">
+        \t1. Hai bạn có thể giới thiệu bản thân?\n\n
+        \t2. Bạn nam có tài lẻ gì không? ví dụ: hát, nhảy, vẽ, đàn.\n\n
+        \t3. Bạn nữ có sở thích là gì?\n\n
+        \t4. Hai bạn có dự định gì trong tương lai?\n\n
+        \t5. Hai bạn có thích trẻ em không?\n\n
+        \t6. Hai bạn có ngại khoảng cách địa lý không?\n\n
+        \t7. Hai bạn sắp xếp thời gian thế nào để gặp mặt khi mà cả hai đều bận?\n\n
+        \t8. Nếu được du lịch nước ngoài bạn sẽ chọn nước nào?\n\n
+    </string>
+</resources>

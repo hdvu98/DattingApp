@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/sexuality0">
+    </item>
+    <item android:title="Đồng tính"
+        android:orderInCategory="1"
+
+        android:id="@+id/sexuality1">
+    </item>
+    <item android:title="Dị tính"
+        android:orderInCategory="2"
+
+        android:id="@+id/sexuality2"
+        ></item>
+    <item android:title="Song tính"
+        android:orderInCategory="3"
+
+        android:id="@+id/sexuality3"
+        ></item>
+</menu>

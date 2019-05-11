@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ChatRoomActivity"
+android:background="@drawable/love_bg">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:alpha=".0">
+</View>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:background="@drawable/button_white"
+    android:layout_marginTop="16dp"
+    android:layout_marginRight="32dp"
+    android:layout_marginLeft="32dp">
+
+</View>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Người dẫn chương trình"
+    android:textColor="#f05457"
+    android:layout_marginTop="19dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:fontFamily="@font/comfortaa_font_style"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="32dp">
+        <ImageView
+            android:layout_width="248dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="6dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/mcframe"/>
+        <VideoView
+            android:id="@+id/videoMC"
+            android:layout_width="210dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mcframe"/>
+            <VideoView
+                android:id="@+id/videoMale"
+                android:layout_width="136dp"
+                android:layout_height="87dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mcframe"/>
+            <VideoView
+                android:id="@+id/videoFemale"
+                android:layout_width="136dp"
+                android:layout_height="86dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingTop="4dp">
+            <View
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/button2">
+            </View>
+            <TextView
+                android:id="@+id/txtMale"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nam, 20"
+                android:textColor="#ffff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/comfortaa_font_style"
+                android:layout_marginTop="4dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:paddingTop="4dp">
+            <View
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/button2">
+            </View>
+            <TextView
+                android:id="@+id/txtFemale"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Nữ, 18"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/comfortaa_font_style"
+                android:layout_marginTop="4dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#e43941"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentBottom="true">
+        </View>
+        <LinearLayout
+            android:id="@+id/tabBar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginBottom="0dp">
+            <ImageButton
+                android:id="@+id/btnChatVoice"
+                android:layout_marginLeft="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/voice"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/btnVideoCall"
+                android:layout_marginLeft="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/video"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/btnHelp"
+                android:layout_marginLeft="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/script"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/btnClose"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/close"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_above="@+id/tabBar"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_white"
+            android:text="Bắt đầu bấm nút"
+            android:textColor="#f05457"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_white"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"/>
+
+
+</RelativeLayout>

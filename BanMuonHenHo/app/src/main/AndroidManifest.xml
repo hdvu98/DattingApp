@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thanhhai.banmuonhenho">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Bạn Muốn Hẹn Hò"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".UserInfomationActivity" />
+        <activity
+            android:name=".changePasswordActivity"
+            android:label="Thay đổi mật khẩu"
+            android:parentActivityName=".UserInfomationActivity" />
+        <activity
+            android:name=".manageAcount"
+            android:label="Thông tin tài khoản"
+            android:parentActivityName=".UserInfomationActivity" />
+        <activity
+            android:name=".editUserInfo"
+            android:label="Giới thiệu bản thân"
+            android:parentActivityName=".UserInfomationActivity" />
+        <activity
+            android:name=".lookingPeopleActivity"
+            android:label="Tôi muốn tìm người"
+            android:parentActivityName=".UserInfomationActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".ChatRoomActivity" />
+        <activity android:name=".ChatRoomMCActivity" />
+        <activity android:name=".MatchingActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity
+            android:name=".RoomListMCActivity"
+            android:label="Danh sách phòng hẹn hò" />
+        <activity android:name=".CrushActivity"
+            android:label="Thông tin đối phương"
+            android:parentActivityName=".UserInfomationActivity"
+            ></activity>
+    </application>
+
+</manifest>

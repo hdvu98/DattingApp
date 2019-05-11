@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Chưa trả lời"
+        android:orderInCategory="0"
+
+        android:id="@+id/smoking0">
+    </item>
+    <item android:title="Tôi không hút thuốc"
+        android:orderInCategory="1"
+
+        android:id="@+id/smoking1">
+    </item>
+    <item android:title="Tôi ít hút thuốc"
+        android:orderInCategory="2"
+
+        android:id="@+id/smoking2"
+        ></item>
+    <item android:title="Tội hút thuốc thường xuyên"
+        android:orderInCategory="3"
+
+        android:id="@+id/smoking3"
+        ></item>
+
+</menu>
